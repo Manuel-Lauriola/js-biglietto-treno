@@ -2,3 +2,9 @@
 
 const age = prompt(`inserisci la tua età`)
 const trip = prompt(`inserisci la distanza in km`)
+
+// il prezzo del biglietto è definito in base ai km (0.21 € al km)
+
+const ticket = (trip * 0.21)
+console.log `${ticket + "€"}`
+
