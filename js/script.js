@@ -11,22 +11,26 @@ console.log `${ticket + "€"}`
 // va applicato uno sconto del 20% per i minorenni
 
 const ticketJunior = (`${ticket}` * 0.80)
+const ticketJuniorFixed = ticketJunior.toFixed(2)
 
 if(age < 18){
-  console.log `In quanto minorenne hai diritto ad uno sconto del 20% quindi ${ticketJunior + "€"}`
+  console.log `In quanto minorenne hai diritto ad uno sconto del 20% quindi il nuovo prezzo è ${ticketJuniorFixed + "€"}`
 }
 
 // va applicato uno sconto del 40% per gli over 65
 
 const ticketSenior = (`${ticket}` * 0.6)
+const ticketSeniorFixed = ticketSenior.toFixed(2)
 
 if(age > 65){
-  console.log `${ticketSenior + "€"}`
+  console.log `In quanto minorenne hai diritto ad uno sconto del 20% quindi il nuovo prezzo è ${ticketSeniorFixed + "€"}`
 }
 
-else {
-  console.log `${ticket + "€"}`
-}
+// else {
+//   console.log `non hai diritto a sconti`
+// }
+
+// L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo)
 
 
 
