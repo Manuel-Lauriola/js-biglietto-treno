@@ -8,3 +8,14 @@ const trip = prompt(`inserisci la distanza in km`)
 const ticket = (trip * 0.21)
 console.log `${ticket + "€"}`
 
+// va applicato uno sconto del 20% per i minorenni
+
+const ticketJunior = (`${ticket}` * 0.80)
+
+if(age < 18){
+  console.log `${ticketJunior}`
+}
+
+
+
+
