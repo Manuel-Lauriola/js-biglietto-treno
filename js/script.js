@@ -13,9 +13,20 @@ console.log `${ticket + "€"}`
 const ticketJunior = (`${ticket}` * 0.80)
 
 if(age < 18){
-  console.log `${ticketJunior}`
+  console.log `In quanto minorenne hai diritto ad uno sconto del 20% quindi ${ticketJunior + "€"}`
 }
 
+// va applicato uno sconto del 40% per gli over 65
+
+const ticketSenior = (`${ticket}` * 0.6)
+
+if(age > 65){
+  console.log `${ticketSenior + "€"}`
+}
+
+else {
+  console.log `${ticket + "€"}`
+}
 
 
 
